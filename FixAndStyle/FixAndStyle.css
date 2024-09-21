@@ -30,6 +30,9 @@ div{
 a{
     color: green;
 }
+a:hover{
+    color: red;
+}
 .orange{
     color: orange;
     font-weight: bold; 
