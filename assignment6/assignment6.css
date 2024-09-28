@@ -1,0 +1,117 @@
+body {
+    background-image: url(a62.png);
+}
+.all {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 5;
+    width: 50%;
+    margin: auto;
+    border: 5px solid black;
+    background-color: white;
+}
+.b1 {
+    grid-column: span 3;
+    grid-row: span 1;
+    color: white;
+    background-color: black;
+    margin: 1em 1em 0em 1em;
+    padding: 0em 1em 0em 1em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-weight: normal;
+}
+.b2 {
+    grid-column: span 1;
+    grid-row: span 4;
+    display: inline-block;
+    margin-right: 5em;
+    width: 10em;
+    margin-left: none;
+}
+h2 {
+    font-family: Helvetica, Arial, sans-serif;;
+}
+.b2 ul {
+    list-style-type: none;
+    list-style: none;
+    margin: none;
+    width: 10em;
+    padding-left: 1em;
+}
+
+.b2 a{
+    display: inline-block;
+    padding: 20px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    width: 10em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.b2 a:hover{
+    background-color: darkred;
+}
+
+.b3 {
+    grid-column: span 2;
+    grid-row: span 1;
+    margin: 0em 1em 0em 0em;
+    border-bottom: 5px solid black;
+    height: 60px;
+}
+
+.b4{
+    grid-column: span 2;
+    grid-row: span 1;    
+}
+
+.bold {
+    text-align: justify;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 20em;
+    float: left;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.b4 p {
+    margin-right: 1em;
+}
+
+.b4 {
+    grid-column: span 2;
+    grid-row: span 1;
+    padding: none;
+    margin: none;
+}
+
+.b4 a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+.b4 a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.b6 {
+    grid-column: span 3;
+    grid-row: span 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-top: 5px solid black;
+}
