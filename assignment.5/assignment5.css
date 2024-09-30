@@ -1,0 +1,68 @@
+h1{
+    font-family: Helvetica;
+    font-weight: unset;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+h2{
+    font-family: Helvetica;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 5px solid black;
+}
+div{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+ul li {
+    display: inline-block;
+    background-color: darkblue;
+    width: 150px;
+    margin: 10px;
+}
+ul li a{
+    display: block;
+    padding: 20px;
+
+}
+ul li a:hover{
+    display: block;
+    background-color: lightblue;
+    padding: 20px;
+}
+ul li a:visited{
+    color: white;
+}
+body {
+    background-image: url('a5bg.png');
+}
+ul a:link {
+    text-decoration: none;
+    color: white
+}
+p a:hover{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+footer p{
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background-color: darkblue;
+    padding: 30px;
+    border: 5px solid white;
+
+}
+
