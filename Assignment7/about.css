@@ -1,0 +1,122 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 5px solid #004ea7;
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: grey;
+}
+header {
+    background: linear-gradient(0deg, rgba(0,77,165,1) 0%, rgba(0,133,228,1) 100%);  
+    grid-column: span 3;
+}
+h1 {
+    grid-column: span 3;
+    font-style: italic;
+    font-weight: unset;
+    padding-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    color: green;
+}
+h1 a {
+    color: #68ceff;
+    text-decoration: none;
+}
+nav {
+    grid-column: span 3;
+}
+nav ol {
+    list-style-type: none;
+    padding: 0px;
+}
+nav li {
+    width: 24.6%;
+    padding: 0px;
+    margin-bottom: 0 1em;
+    background: linear-gradient(0deg, rgba(0,77,165,1) 0%, rgba(0,133,228,1) 100%); 
+    display: inline-block;
+    color: blue;
+}
+nav li a {
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav li a:hover {
+    background-color: maroon;   
+}
+.empty {
+    color: rgba(173, 216, 230, 0);
+}
+.empty:hover {
+    color: rgba(128, 0, 0, 0);
+    background: linear-gradient(0deg, rgba(0,77,165,1) 0%, rgba(0,133,228,1) 100%); 
+}
+footer {
+    grid-column: span 2;
+    background-color: red;
+    border-top: 5px solid #004ea7;
+}
+footer img {
+    margin: 10px;
+}
+
+.left {
+    grid-column: span 1;
+    background-color: white;
+}
+
+.left h2, .right h2 {
+    font-weight: unset;
+    color: #0d489f;
+    margin-left: 20px;
+    border-bottom: 5px solid #00409c;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.right {
+    grid-column: span 1;
+    background-color: lightblue;
+    text-align: justify;
+    padding-top: 2em;
+    font-weight: bold;
+}
+
+.left img {
+    float: right;
+    border: 3px solid  #1b55a6;
+    margin-left: 20px;
+}
+
+.left a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left a:hover {
+    color: pink;
+}
+
+.right p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
