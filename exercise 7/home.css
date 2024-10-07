@@ -1,0 +1,151 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 5px solid black;
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    background-image: url('a5bg.png');;  
+}
+header {
+    grid-column: span 3;
+    background-color: blue;
+}
+h1 {
+    grid-column: span 3;
+    font-weight: unset;
+    padding-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-bottom: 2em;
+}
+a:hover {
+    color: green;
+}
+h1 a {
+    color: #68ceff;
+    text-decoration: none;
+    color: black;
+}
+nav {
+    grid-column: span 3;
+    border-top: black 5px solid;
+    background-color: white;
+    padding: auto;
+}
+nav ol {
+    list-style-type: none;
+    padding: 0px;
+
+}
+nav li {
+    width: 20%;
+    padding: 0px;
+    margin-bottom: 0 1em;
+    background: green; 
+    display: inline-block;
+    color: blue;
+    margin-left: 2em;
+    border: black 5px solid;
+}
+nav li a {
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+nav li a:hover {
+    background-color: maroon;   
+}
+footer {
+    grid-column: span 2;
+    background-color: red;
+    border-top: 5px solid black;
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+footer img {
+    margin: 10px;
+}
+
+.left {
+    grid-column: span 1;
+    background-color: white;
+}
+
+.left h2, .right h2 {
+    font-weight: unset;
+    color: black;
+    margin-left: 20px;
+    border-bottom: 5px solid black;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.left p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.left h2 {
+    font-weight: bold;
+}
+
+.right {
+    grid-column: span 1;
+    text-align: justify;
+    padding-top: 0em;
+    font-weight: bold;
+
+    background-color: white;
+}
+.two {
+    font-style: italic;
+}
+.right h2 {
+    color: white;
+    border-bottom: white 5px solid;
+}
+
+.rightbox {
+    background-color: blue;
+    padding-top: .25em;
+    margin-right: 15px;
+    padding-bottom: 15em;
+    color: white;
+    
+}
+
+.left img {
+    float: right;
+    border: 3px solid  #1b55a6;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.left a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left a:hover {
+    color: pink;
+}
+
+.right p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
