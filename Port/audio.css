@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: var(--mainfont);
+}
+  
+:root {
+    --light: #FDD3C5;
+    --dark: #FFCCBB;
+    --foot: #FFB8A0;
+    --img: #E1FDC5;
+    --ndark: #B484E4;
+    --nlight: #E1C5FD;
+    --content: #FDE1C5;
+    --all: span 10;
+    --mainfont: Arial, sans-serif;
+    --space: 24px;
+    --margin: 10%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0px, var(--space);
+    background-color: var(--light);
+}
+
+nav, section, footer {
+    grid-column: var(--all);
+    padding: var(--space);
+}
+
+#two {
+    background-color: var(--light);
+}
+
+#one {
+    background-color: var(--dark);
+}
+
+#one, #two {
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+h2, #one p {
+    grid-column: span 10;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: var(--space);
+    font-size: 30px;
+}
+
+#one p {
+    font-size: 25px;
+}
+
+
+#two{
+    background-color: var(--light);
+    grid-column: var(--all);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+div{
+    grid-column: span 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#two p {
+  margin-bottom: 60px;
+  font-size: 24px;
+  padding-top: var(--space);
+}
+iframe {
+  margin-top: 28px;
+}
+
+
+nav {
+    background-color: var(--nlight);
+    padding-left: 48px;
+}
+li {
+    display: inline-block;
+    padding-left: var(--space);
+    padding-right: var(--space);
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 25px;
+    transition: padding .5s;
+}
+nav a:hover {
+    background-color: var(--ndark);
+    padding: 27px;
+}
+
+footer {
+    background-color: var(--foot);
+    grid-column: var(--all);
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    /* place on the bottom */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 96.9%;
+    grid-column: span 10;
+    background: var(--foot);
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    height: 150px;
+}
