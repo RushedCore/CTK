@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link href="home.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+    <a href="https://github.com/RushedCore/CTK301" target="_blank" class="bi bi-github"></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjRFLqfgdgcVxVLsfXbvdpHfpZPzBQzXgZtrRPfjjftWdZbWfHbfTVDKNqsPrbTVPdZqCT" target="_blank" class="bi bi-envelope-at-fill"></a>
+    <h1>Jay Stephens</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="audio.html">Audio Design</a>
+            <li><a href="game.html">Game Design</a>
+        </ul>
+    </nav>
+    <section id="one">
+        <div class="left">
+        <H2>A Passion For Games</H2>
+        <p>My name is Jay, and I loved making games as a child, but I let it go for a bit when I got older. However, in high school I had a great teacher who guided me back to game design, and here I am to stay!</p>
+        </div>
+        <div class="fill"> </div>
+        <div class="right">
+        <img src="Me.jpg" alt="A picture of me smiling while a baby yoda plushie sits the hood of my jacket.">
+        </div>
+    </section>
+    <section id="two">
+        <div id="box"> </div>
+        <div id="content" class="reveal">
+        <div class="left">
+        <h3>Current Status - 11/13/2024</h3>
+        <p>At the moment I am a student at Illinois State University under the game design program.</p>
+        </div>
+        <div class="fill"> </div>
+        <div class="right">
+        <h3>Current Skills - 11/13/2024</h3>
+        <p>So far I have worked on a couple of physical games, the basics of audio design, and web design. </p>
+        </div>
+        </div>
+    </section>
+    <section id="three">
+        <h2>Proof I Can Maybe Draw</h2>
+        <div class="left">
+        <p>Disclaimer: I feel it is important to be aware of ones shortcomings, so here is a gallery which I feel shows off my least developed skill; the ability to draw.</p>
+        </div>
+        <div class="fill"> </div>
+            <div id="myCarousel" class="f-carousel">
+                <div class="f-carousel__slide"><img src="ink.jpg" alt="A picture of different objects shadow's drawn in ink. The background is black, each item it white, and the item's have gray shadows." class="ink"></div>
+                <div class="f-carousel__slide"><img src="objects.jpg" alt="A ladder, a couple boxes, and some lamps are drawn in pencil." ></div>
+                <div class="f-carousel__slide"><img src="hampter.jpg" alt="A picture of a small plastic hampster drawn in pencil with its circular shape drawn with extra lines."  class="hampter"></div>
+                <div class="f-carousel__slide"><img src="char.jpg" alt="A person whose head is not in frame has been drawn standing in front of a sink. They are making a rock-on hand sign, and the drawing is done in charcoal." class="face"></div>
+            </div>
+    </section>
+    <footer>
+        <p>Jay Stephens</p>
+        <p>Email: nhs.jes@gmail.com   Phone: 972-352-9589 GitHub: RushedCore</p>
+        <svg><path fill="" d="M12,8L10.67,8.09C9.81,7.07 7.4,4.5 5,4.5C5,4.5 3.03,7.46 4.96,11.41C4.41,12.24 4.07,12.67 4,13.66L2.07,13.95L2.28,14.93L4.04,14.67L4.18,15.38L2.61,16.32L3.08,17.21L4.53,16.32C5.68,18.76 8.59,20 12,20C15.41,20 18.32,18.76 19.47,16.32L20.92,17.21L21.39,16.32L19.82,15.38L19.96,14.67L21.72,14.93L21.93,13.95L20,13.66C19.93,12.67 19.59,12.24 19.04,11.41C20.97,7.46 19,4.5 19,4.5C16.6,4.5 14.19,7.07 13.33,8.09L12,8M9,11A1,1 0 0,1 10,12A1,1 0 0,1 9,13A1,1 0 0,1 8,12A1,1 0 0,1 9,11M15,11A1,1 0 0,1 16,12A1,1 0 0,1 15,13A1,1 0 0,1 14,12A1,1 0 0,1 15,11M11,14H13L12.3,15.39C12.5,16.03 13.06,16.5 13.75,16.5A1.5,1.5 0 0,0 15.25,15H15.75A2,2 0 0,1 13.75,17C13,17 12.35,16.59 12,16V16H12C11.65,16.59 11,17 10.25,17A2,2 0 0,1 8.25,15H8.75A1.5,1.5 0 0,0 10.25,16.5C10.94,16.5 11.5,16.03 11.7,15.39L11,14Z"/></svg>
+    </footer>
+    <script>   
+        Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script>
+        const container = document.getElementById("myCarousel");
+        const options = { infinite: true };
+        new Carousel(container, options);
+    </script>
+    <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 30;
+            if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+            } else {
+            reveals[i].classList.remove("active");
+            }
+        }
+        }
+        window.addEventListener("scroll", reveal, {passive: true});
+    </script>
