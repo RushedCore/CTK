@@ -247,16 +247,3 @@ footer {
     z-index: -1;
     height: 150px;
 }
-
-@media (prefers-reduced-motion) {
-    footer {
-            background-color: var(--foot);
-            grid-column: var(--all);
-            padding-top: var(--space);
-            padding-bottom: var(--space);
-          }
-    footer p {
-            margin: auto;
-            text-align: center;
-          }
-}
