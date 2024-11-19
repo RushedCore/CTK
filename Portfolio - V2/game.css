@@ -143,6 +143,10 @@ img {
     height: 325px;
 }
 
+svg {
+    height: 20px;
+}
+
 footer p {
     margin: auto;
     text-align: center;
