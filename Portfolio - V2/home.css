@@ -221,6 +221,10 @@ nav a:hover {
     padding-right: 127px;
 }
 
+svg {
+    height: 20px;
+}
+
 footer {
     background-color: var(--foot);
     grid-column: var(--all);
