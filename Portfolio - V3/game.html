@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="game.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="audio.html">Audio Design</a>
+            <li><a href="game.html">Game Design</a>
+        </ul>
+    </nav>
+    <section id="one">
+        <h2>Game Design</h2> 
+        <p>So far I have created three games, specifically I worked on the rulebooks and mechanics, which are presented below.
+        </p>
+    </section>
+    <section id="two">
+        <h3>The Four Kingdoms</h3>
+        <div class="desc">
+        <p>The Four Kingdoms is the first game I have ever worked on in college, and as such, I ended up putting a lot into  this tabletop war game. I worked on a team of four for this game, where I acted as the lead mechanics designer, meaning I was in charge of creating most of the game's functions. After the first draft of the game was completed, my role switched to mechanic/rule refinement, eventually ending in me creating the rulebook for the game as well. </p>
+
+        <p>This project taught me what working on a game looks like and how operating with a team affects that process. I got to practice assigning tasks based on people's skills and maintaining team cohesion through a stressful project, and I learned a lot about how intricate game design can be in the process.</p>
+        </div>
+        <div class="c_one">
+        <a href="king_rules.pdf" data-fancybox="gallery" data-caption="Rules">
+            <img src="king_lowres-1.jpg" alt="A low resolution image of the rules for the Four Kingdoms.">
+        </a>
+        <a href="kingdoms_mechanics.pdf" data-fancybox="gallery" data-caption="In Progress - Mechanics">
+            <img src="kingdoms_mechanics_page-0001.jpg" alt="A low resolution image of the mechanics for the Four Kingdoms.">
+        </a>
+        </div>
+    </section>
+    <section id="three">
+        <h3>Darwin</h3>
+        <div class="desc">
+        <p>Darwin is technically the third game I worked on, but my team and I had a handful of days to work on it, so it feels more like a stepping stone than the culmination of my first foray into game design. For this project, my role as lead mechanics designer was paired with my being the head of the whole project, which pushed my ability to manage a game design team even further.
+        </p>
+
+        <p>For physical work, this project had me creating multiple cards (not shown here), mapping out simpler mechanics to create a lighter "party game" experience, and creating another set of rules.
+        </p>
+        </div>
+        <div class="c_one">
+        <a href="rules-darwin.pdf" data-fancybox="gallery2" data-caption="Rules">
+            <img class="dar" src="rules-darwin.jpg" alt="A low resolution image of the rules for Darwin.">
+        </a>
+        <a href="darwin_mechanics.pdf" data-fancybox="gallery2" data-caption="In Progress - Mechanics">
+            <img src="darwin_mechanics_page-0001.jpg" alt="A low resolution image of the mechanics for Darwin.">
+        </a>
+        </div>
+    </section>
+    <section id="four">
+        <h3>Stop Booth!</h3>
+        <div class="desc">
+        <p>Finally, the game I want to return to—Stop Booth! This game was made by myself and one other person from the art team I worked with for the other two games, and we ended up making a mechanically heavy and story-dense game that I am rather proud of. Stop Booth! is a light-hearted game about time travelers returning to stop the assassination of Abraham Lincoln and the hilarity that ensues from our cast of comical NPCs, both historically inspired and fabricated. 
+        </p>
+
+        <p>This project pushed my creative abilities and is the one I put the most time into out of all three. Stop Booth! had me creating dialogue trees and multiple decks of cards, all while trying to research the story game genre, as I had never played a game like this before. Overall, this game asked less of me in a managerial sense, but it did motivate me to dig into what makes good dialogue, what designs look best, and how to best combine mechanics and story.
+        </p>
+        </div>
+        <div class="c_one">
+        <a href="Rules.pdf" data-fancybox="gallery3" data-caption="Rules">
+            <img src="Letter - 1.jpg" alt="A low resolution image of the rules for Stop Booth!">
+        </a>
+        <a href="Booth The Killer.pdf" data-fancybox="gallery3" data-caption="In Progress - Mechanics">
+            <img src="Booth The Killer_page-0001.jpg" alt="A low resolution image of the mechanics for Stop Booth!">
+        </a>
+        </div>
+    </section>
+    <footer>
+        <p>Jay Stephens</p>
+        <p>Email: nhs.jes@gmail.com   Phone: 972-352-9589 GitHub: RushedCore</p>
+        <svg><path fill=""/></svg>
+    </footer>
+
+
+
+    <script>   
+        Fancybox.bind("[data-fancybox]", {});
+    </script>
+        <script>
+            function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 30;
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+            window.addEventListener("scroll", reveal, {passive: true});
+        </script>

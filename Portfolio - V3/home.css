@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: "Poppins";
+}
+  
+:root {
+    --light: #FDD3C5;
+    --dark: #FFCCBB;
+    --foot: #FFB8A0;
+    --img: #E1FDC5;
+    --ndark: #B484E4;
+    --nlight: #E1C5FD;
+    --content: #FDE1C5;
+    --all: span 10;
+    --mainfont: Arial, sans-serif;
+    --space: 24px;
+    --margin: 10%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0px, var(--space);
+    background-color: var(--light);
+}
+
+header, nav, section, footer {
+    grid-column: var(--all);
+    padding: var(--space);
+}
+
+img {
+    float: right;
+    background-color: var(--img);
+}
+
+header {
+    background-color: var(--dark);
+}
+
+#two {
+    background:
+    radial-gradient(var(--light) 15%, transparent 20%) 0 1px,
+    radial-gradient(var(--light) 15%, transparent 20%) 8px 9px;
+    background-color: var(--dark);
+    background-size:16px 16px;
+}
+
+#one, #three {
+    background-color: var(--light);
+}
+
+#one, #two, #three {
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.bi-github, .bi-envelope-at-fill{
+    font-size: 50px;
+    float: right;
+    padding: 0px;
+    padding-right: 20px;
+    transition: font-size .5s;
+}
+
+.bi-envelope-at-fill{
+    padding-right: 40px;
+}
+
+header a:hover {
+    background-color: rgba(172, 255, 47, 0);
+    font-size: 55px;
+}
+
+h1 {
+    padding-left: var(--space);
+    padding-bottom: var(--space);
+    font-size: 48px;
+}
+
+nav {
+    background-color: var(--nlight);
+    padding-left: 48px;
+}
+li {
+    display: inline-block;
+    padding-left: var(--space);
+    padding-right: var(--space);
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 25px;
+    transition: padding .5s;
+}
+nav a:hover {
+    background-color: var(--ndark);
+    padding: 27px;
+}
+
+
+#one .left {
+    grid-column: span 4;
+}
+
+#one .fill {
+    grid-column: span 1;
+}
+
+#one .right {
+    grid-column: span 3;
+}
+
+#one img {
+    width: 100%;
+}
+
+#one p {
+    margin-top: var(--space);
+    font-size: 32px;
+}
+#one h2 {
+    font-size: 36px;
+}
+
+#box {
+    grid-column: span 1;
+}
+#content {
+    background-color: var(--content);
+    padding: var(--space);
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column: span 6;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#two .left, #two .right{
+    grid-column: span 3;
+    padding: var(--space);
+}
+
+#two .fill {
+    grid-column: span 1;
+}
+#two h3 {
+    font-size: 24px;
+}
+#two p {
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+#three h2 {
+    grid-column: span 10;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+#three p {
+    text-align: center;
+    font-size: 36px
+}
+
+#three .left {
+    grid-column: span 3;
+    padding-top: 100px;
+}
+#three .fill {
+    grid-column: span 1;
+}
+
+#myCarousel {
+    grid-column: span 4;
+    height: 500px;
+    background: var(--content);
+}
+  
+#myCarousel .f-carousel__slide {
+    text-align: center;
+    padding: 30px;
+    background: var(--content);
+}
+
+#myCarousel img {
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+    padding-right: 45px;
+    background: var(--content);
+}
+
+
+.ink {
+    padding-top: var(--space); 
+}
+
+.hampter {
+    padding-top: 45px; 
+
+}
+
+.face {
+    padding-top: 0px;
+}
+
+#myCarousel .face {
+    width: 440px;
+    padding-right: 127px;
+}
+
+footer {
+    background-color: var(--foot);
+    grid-column: var(--all);
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+}
+
+svg {
+    height: 20px;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: auto;
+}
+
+footer {
+    /* place on the bottom */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 96.9%;
+    grid-column: span 10;
+    background: var(--foot);
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    height: 200px;
+}
