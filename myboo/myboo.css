@@ -1,0 +1,143 @@
+/* Setting Up */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: var(--mainfont);
+    font-size: 24px;
+}
+  
+:root {
+    --content: #8ec7ff;
+    --other: #aa8eff;
+    --all: span 2;
+    --mainfont: "Poppins", sans-serif;
+    --space: 5px;
+    --margin: 60px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--content);
+}
+/* Setting Up */
+
+
+/* Text*/
+#sect2 p, #sect4 p {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    background-color: var(--other);
+    padding: var(--margin);
+    border-style: solid;
+    border-width: var(--space);
+    border-color: #529ce6;
+}
+/* Text*/
+
+
+/*Sect changes*/
+#sect2, #sect3, #sect4 {
+    margin-bottom: var(--margin);
+}
+
+#sect1, #sect4, #sect5 {
+    grid-column: var(--all);
+}
+/*Sect changes*/
+
+
+/* Section 1 */
+#sect1 h1 {
+    background-color: var(--other);
+    margin: auto;
+    margin-top: var(--space);
+    margin-bottom: var(--margin);
+    width: 500px;
+    font-size: 36px;
+    text-align: center;
+    border-style: ridge;
+    border-width: var(--space);
+    border-color: black;
+}
+
+.bi-music-note{
+    font-size: 36px;
+}
+/* Section 1 */
+
+
+/* Section 2 */
+#sect2 #italic {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#sect2 a {
+    color: black;
+    font-weight: bold;
+}
+
+#sect2 a:hover {
+    color: #529ce6;
+}
+/* Section 2 */
+
+
+/* Section 3 */
+#sect3 iframe {
+    height: 100%;
+    width: 85%;
+}
+/* Section 3 */
+
+
+/* Section 4 needed no additional code.*/
+
+/* Section 5 */
+#sect5 img{
+    display: inline-block;
+    width: 25%;
+    margin: var(--margin);
+    vertical-align: middle;
+}
+
+#sect5 a {
+    color: var(--content);
+}
+/* Section 5 */
+
+
+/* Footer */
+footer{
+    background-color: var(--other);
+    padding: var(--margin);
+    grid-column: var(--all);
+}
+
+footer ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+footer li {
+    display: inline-block;
+    grid-column: var(--all);
+}
+
+footer a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+}
+
+footer a:hover {
+    color: var(--content);
+    font-size: 30px;
+    transition: color .4s;
+    transition: font-size .4s;
+}
+
