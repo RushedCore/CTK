@@ -1,0 +1,185 @@
+body {
+    background: rgb(255, 156, 156);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 25px;
+}
+
+#box {
+    height: 500px;
+    width: 500px;
+    border: solid black 20px;
+    margin: auto;
+    align-content: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    scale: 1.5;
+    transition: all 5s;
+}
+
+#fade-img {
+    opacity: 0%;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+}
+
+p {
+    opacity: 0%;
+    position: absolute;
+    top: 500px;
+    margin-left: 90px;
+    background-color: green;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 2;
+    transition: all 5s;
+    border-radius: 25px;
+}
+
+#box:hover img{
+    transform: rotate(360deg);
+}
+
+#box:hover #fade-img, #box:hover p{
+    opacity: 100%;
+}
+
+#circle {
+    height: 400px;
+    width: 400px;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(174,1,1,1) 91%);
+    border-radius: 50%;
+    float: left;
+    margin-left: 250px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+#circle:hover {
+    scale: .8;
+}
+
+.circ1 {
+    height: 200px;
+    width: 300px;
+    border: solid 10px green;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    top: 250px;
+    background-color: rgb(5, 97, 5);
+}
+
+.circ2 {
+    height: 200px;
+    width: 300px;
+    border: solid 10px green;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    bottom: 400px;
+    background-color: rgb(5, 97, 5);
+}
+
+
+.eye1 { 
+    height: 50px;
+    width: 50px;
+    border: solid 10px black;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    bottom: 450px;
+    background-color: black;
+    margin-left: 50px; 
+}
+
+.eye2 { 
+    height: 50px;
+    width: 50px;
+    border: solid 10px black;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    bottom: 580px;
+    background-color: black;
+    margin-right: 50px;
+}
+
+.smile {
+    height: 5px;
+    width: 50px;
+    border: solid 5px #000;    
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    bottom: 580px;
+    background-color: black;
+    margin-right: 135px;
+    margin-top: 40px;
+    border-radius: 0 0 140px 140px;
+    border-color: transparent transparent #000 transparent;
+}
+
+#light1 {
+    width: 20px;
+    height: 700px;
+    z-index: 1;
+    float: left;
+    background-color: green;
+    animation: green-red 5s linear infinite;
+}
+
+#light2 {
+    width: 20px;
+    height: 700px;
+    z-index: 1;
+    float: right;
+    background: green;
+    animation: green-red 5s linear infinite;
+}
+
+#light3 {
+    width: 100%;
+    height: 20px;
+    z-index: 1;
+    float: top;
+    background: green;
+    animation: green-red 5s linear infinite;
+}
+
+#light4 {
+    width: 100%;
+    height: 20px;
+    z-index: 1;
+    float: bottom;
+    margin-top: 11.5px;
+    background: green;
+    animation: green-red 5s linear infinite;
+}
+
+@keyframes green-red {
+    0% {background-color: green;}
+    50% {background-color: red;}
+    0% {background-color: green;}
+}
+
