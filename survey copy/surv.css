@@ -1,0 +1,135 @@
+html {
+    animation: bye3 9s;
+    background-color: rgb(63, 159, 63);
+}
+
+@keyframes  bye3 {
+    0% { background-color: black;}
+    80% { background-color: black;}
+    100% { background-color:  rgb(63, 159, 63);}
+}
+
+body {
+    background-color: rgb(63, 159, 63);
+    display: grid;
+}
+
+#all {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: black;
+    z-index: -10;
+    width: 100%;
+    animation: bye2 9s;
+    
+}
+
+@keyframes  bye2 {
+    0%   { z-index: 1;}
+    80% { opacity: 100%;}
+    99%   { z-index: 1;}
+    100% { z-index: -1; opacity: 0%}
+}
+
+:root {
+    --slide: 4s;
+}
+
+div {
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+    width: 80%;
+    height: 1000px;
+    padding-top: 2%;
+}
+
+iframe {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    justify-content: center;
+    height: 65%;
+    border: solid rgb(32, 98, 32);
+}
+
+svg {
+    grid-column: 1;
+    grid-row: 1;
+    width: 110%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 2%;
+    animation: grow 9s;
+    z-index: 2;
+}
+
+@keyframes grow {
+    0%   { transform: scale(.5);}
+    40%   { transform: scale(.5);}
+    100% { transform: scale(1);}
+}
+
+#img {
+    grid-column: 1;
+    grid-row: 1;
+    animation: bye1 9s;
+    z-index: -1;
+}
+
+@keyframes  bye1 {
+    0%   { z-index: 2;}
+    70% { opacity: 100%;}
+    80% { opacity: 0%;}
+    99%   { z-index: 2;}
+    100% { z-index: -1; opacity: 0%;}
+}
+
+/* Dragon */
+#head {
+    animation: zoom 5s;
+    transform-origin: 30% 45%;
+}
+
+@keyframes zoom {
+    0%   { transform: scale(0.1);}
+    100% { transform: scale(1.0);}
+}
+
+#top {
+    animation: zoom-top var(--slide);
+}
+
+@keyframes zoom-top {
+    0%   { transform: translate(0, -2000px);}
+    100% { transform: translate(0, 0px);}
+}
+
+#breath {
+    animation: zoom-bottom var(--slide);
+}
+
+@keyframes zoom-bottom {
+    0%   { transform: translate(0, 2000px);}
+    100% { transform: translate(0, 0px);}
+}
+
+#back {
+    animation: zoom-left var(--slide);
+}
+
+@keyframes zoom-left {
+    0%   { transform: translate(-2000px, 0px);}
+    100% { transform: translate(0, 0px);}
+}
+
+#tail {
+    animation: zoom-right var(--slide);
+}
+
+@keyframes zoom-right {
+    0%   { transform: translate(2000px, 0px);}
+    100% { transform: translate(0, 0px);}
+}
+/* Dragon */
