@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+  
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+img {
+    width: 50%;
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    z-index: -1;
+}
+
+.text {
+    position: absolute;
+    color: black;
+    background: yellow;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 70px;
+}
+
+.text:hover {
+    scale: 1.5;
+    font-weight: bold;
+}
+
+#one {
+    top: 20%;
+    left: 20%;
+}
+
+.rgy {
+    background: rgb(23,100,51);
+    background: linear-gradient(90deg, rgba(23,100,51,1) 0%, rgba(198,184,46,1) 50%, rgba(180,46,37,1) 100%);
+}
+
+#two {
+    top: 80%;
+    left: 20%;
+}
+
+.pgw {
+    background: rgb(113,51,179);
+    background: linear-gradient(90deg, rgba(113,51,179,1) 0%, rgba(219,253,255,1) 50%, rgba(46,99,53,1) 100%);
+}
+
+#three {
+    top: 80%;
+    left: 80%;
+}
+
+.bwb {
+    background: rgb(11,11,11);
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(63,116,143,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+#four {
+    top: 20%;
+    left: 80%;
+}
+
+.by {
+    background: rgb(10,134,183);
+    background: linear-gradient(90deg, rgba(10,134,183,1) 0%, rgba(240,192,126,1) 100%);
+}
+
+.rotate {
+    animation: spin 3s;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
