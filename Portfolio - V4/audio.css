@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: "Poppins";
+    font-size: 24px;
+}
+  
+:root {
+    --light: #FDD3C5;
+    --dark: #FFCCBB;
+    --foot: #FFB8A0;
+    --ndark: #B484E4;
+    --nlight: #E1C5FD;
+    --content: #FDE1C5;
+    --mainfont: Arial, sans-serif;
+    --space: 1rem;
+}
+
+html {
+    background-color: var(--dark);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--nlight);
+    text-align: center;
+    padding: .5rem;
+    grid-column-gap: .9rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: .5rem;
+    align-content: center;
+    transition: .5s;
+    padding: .2rem;
+}
+
+#small {
+    width: 50%;
+    height: 50%;
+    margin-left: 2rem;
+    margin-top: .9rem;
+    margin-bottom: 0rem;
+}
+
+.mid {
+    width: 80%;
+    height: 80%;
+}
+
+nav a:hover {
+    background-color: var(--ndark);
+    scale: 1.1;
+}
+
+#one {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--dark);
+}
+
+#one p{
+    padding-top: var(--space);
+}
+
+#two {
+    background-color: var(--light);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#two p {
+    font-size: 16px;
+    padding-top: var(--space);
+    padding-bottom: 2rem;
+    grid-column-gap: 0rem;
+}
+
+svg {
+    height: var(--space);
+}
+
+footer {
+    background-color: var(--foot);
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+}
+
+footer p {
+    text-align: center;
+    padding: .2rem;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--foot);
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    height: 100%;
+}
+
+
+
+
+@media all and (min-width: 30rem){
+    a { padding: .5rem; }
+    #two p {font-size: 18px;}
+    .mid     {width: 70%;}
+    .mid {height: 50%;}
+    .mid {padding-bottom: .7rem;}
+}
+
+@media all and (min-width: 45rem){
+    a {padding: .7rem;}
+    #one p {padding-left:5rem;}
+    #one p {padding-right:5rem;}
+    #two {padding-left:4rem;}
+    #two {padding-right:4rem;}
+    #two p {font-size: 20px;}
+    #small     {margin-top: .4rem;}
+    #small  {margin-bottom: .8rem;}
+}
+
+@media all and (min-width: 70rem){
+    #two p {font-size: 23px;}
+    #two {grid-template-columns: 1fr 1fr;}
+    #two {grid-column-gap: 5rem;}
+    .mid     {width: 70%;}
+    .mid {height: 50%;}
+}
+
+@media all and (min-width: 75rem){
+    #two {padding-left: 9rem;}
+    #two {padding-right: 9rem;}
+    #one p {padding-left:14rem;}
+    #one p {padding-right:14rem;}
+}
