@@ -19,6 +19,7 @@
 
 html {
     background-color: var(--dark);
+    width: 100%;
 }
 
 nav {
@@ -28,6 +29,7 @@ nav {
     text-align: center;
     padding: .5rem;
     grid-column-gap: .9rem;
+    
 }
 
 a {
@@ -59,7 +61,7 @@ nav a:hover {
 
 #one {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: var(--dark);
 }
 
@@ -98,6 +100,7 @@ footer {
 footer p {
     text-align: center;
     padding: .2rem;
+    font-size: 24px;
 }
 
 footer {
@@ -113,29 +116,37 @@ footer {
 }
 
 
+@media all and (min-width: 1rem){
+    h2 {background-color: gold;}
+    html {font-size: 10px;}
+    footer p {font-size: 15px;}
+    #small {width: 70%;}
+    .mid {width: 90%;}
+}
 
-
-@media all and (min-width: 30rem){
+@media all and (min-width: 40rem){
     a { padding: .5rem; }
+    #one p {padding-left:5rem;}
+    #one p {padding-right:5rem;}
+    #two {padding-left:4rem;}
+    #two {padding-right:4rem;}
     #two p {font-size: 18px;}
     .mid     {width: 70%;}
     .mid {height: 50%;}
     .mid {padding-bottom: .7rem;}
+    h2 {background-color: rgb(0, 204, 255);}
 }
 
-@media all and (min-width: 45rem){
+@media all and (min-width: 55rem){
     a {padding: .7rem;}
     #one p {padding-left:5rem;}
     #one p {padding-right:5rem;}
     #two {padding-left:4rem;}
     #two {padding-right:4rem;}
-    #two p {font-size: 20px;}
+    #two p {font-size: 22px;}
     #small     {margin-top: .4rem;}
     #small  {margin-bottom: .8rem;}
-}
-
-@media all and (min-width: 70rem){
-    #two p {font-size: 23px;}
+    h2 {background-color: rgb(0, 255, 76);}
     #two {grid-template-columns: 1fr 1fr;}
     #two {grid-column-gap: 5rem;}
     .mid     {width: 70%;}
@@ -145,6 +156,7 @@ footer {
 @media all and (min-width: 75rem){
     #two {padding-left: 9rem;}
     #two {padding-right: 9rem;}
-    #one p {padding-left:14rem;}
-    #one p {padding-right:14rem;}
+    #one p {padding-left:12rem;}
+    #one p {padding-right:12rem;}
+    h2 {background-color: red;}
 }
