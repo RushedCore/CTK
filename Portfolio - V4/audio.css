@@ -117,7 +117,6 @@ footer {
 
 
 @media all and (min-width: 1rem){
-    h2 {background-color: gold;}
     html {font-size: 10px;}
     footer p {font-size: 15px;}
     #small {width: 70%;}
@@ -134,7 +133,6 @@ footer {
     .mid     {width: 70%;}
     .mid {height: 50%;}
     .mid {padding-bottom: .7rem;}
-    h2 {background-color: rgb(0, 204, 255);}
 }
 
 @media all and (min-width: 55rem){
@@ -146,7 +144,6 @@ footer {
     #two p {font-size: 22px;}
     #small     {margin-top: .4rem;}
     #small  {margin-bottom: .8rem;}
-    h2 {background-color: rgb(0, 255, 76);}
     #two {grid-template-columns: 1fr 1fr;}
     #two {grid-column-gap: 5rem;}
     .mid     {width: 70%;}
@@ -158,5 +155,4 @@ footer {
     #two {padding-right: 9rem;}
     #one p {padding-left:12rem;}
     #one p {padding-right:12rem;}
-    h2 {background-color: red;}
 }
