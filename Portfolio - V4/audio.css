@@ -76,6 +76,11 @@ nav a:hover {
     grid-template-columns: 1fr;
 }
 
+h3 {
+    text-align: center;
+    padding: var(--space);
+}
+
 iframe {
     width: 100%;
 }
