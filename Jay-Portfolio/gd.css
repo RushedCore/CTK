@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 30px;
+    color: var(--text);
+    color: var(--text);
+    background-color: var(--bg);
+    font-family: "Poppins";
+}
+  
+:root {
+    --text: #f0f3f9;
+    --bg: #1f0428;
+    --box: #31073c;
+    --prime: #87abed;
+    --second: #78158e;
+    --inside: #de25a5;
+    --sectpadd: 150px;
+    --smallpad: 50px;
+}
+
+/* NAVIGATION */
+nav {
+    text-align: center;
+    border-bottom: solid 3px var(--second);
+}
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+nav a:hover {
+   color: var(--prime); 
+}
+/* NAVIGATION */
+
+/* SECTION ONE AND TWO */
+#one, #two {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+.box {
+    grid-column-start: 2;
+    background-color: var(--box);
+    padding: 25px;
+    column-gap: 20px;
+    border-radius: 25px;
+}
+.oops {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--box);
+}
+.fancy {
+    width: 90%;
+    margin: auto;
+    padding: 25px 25px 0px 25px;
+    background-color: var(--box);
+}
+#one .desc{
+    margin: auto;
+    padding: 25px;
+    background-color: transparent;
+    grid-row: 1 / 3;
+    grid-column: 2 / 2;
+}
+.fancy a {
+    background-color: var(--box);
+
+}
+#one .bi, #two .bi {
+    background-color: var(--box);
+    padding: 0px 15px 0px 15px;
+    color: var(--prime);
+}
+.button {
+    background-color: var(--second);
+    padding: 15px;
+    border-radius: 25px;
+    transition: .3s;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.button:hover {
+    background-color: var(--inside);
+    color: var(--bg);
+}
+
+/* THE DIFFERENCE */
+#two .desc{
+    margin: auto;
+    padding: 25px;
+    background-color: transparent;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+/* THE DIFFERENCE */
+
+/* SECTION ONE */
+
+
+/* FOOTER */
+footer {
+    padding-top: var(--sectpadd);
+}
+#icons {
+    display: grid;
+    grid-template-columns: 19fr 1fr 1fr 19fr;
+    text-align: center;
+    background-color: transparent;
+}
+#git:hover, #email:hover {
+    scale: 2.5;
+}
+#git {
+    grid-column-start: 2;
+    padding-right: 25px;
+    scale: 2;
+    background-color: transparent;
+    transition: .3s;
+}
+#email {
+    padding-left: 25px;
+    scale: 2;
+    background-color: transparent;
+    transition: .3s;
+}
+footer p {
+    padding: 25px;
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    padding-bottom: var(--smallpad);
+    background-color: transparent;
+}
+/* FOOTER */
+
+/* CAROUSEL */
+img {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+

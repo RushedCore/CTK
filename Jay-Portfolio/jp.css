@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 30px;
+    color: var(--text);
+    background-color: var(--bg);
+    font-family: "Poppins";
+}
+  
+:root {
+    --text: #f0f3f9;
+    --bg: #1f0428;
+    --box: #31073c;
+    --prime: #87abed;
+    --second: #78158e;
+    --inside: #de25a5;
+    --sectpadd: 200px; 
+    --smallpad: 50px;
+}
+
+/* NAVIGATION */
+nav {
+    text-align: center;
+    border-bottom: solid 3px var(--second);
+}
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+nav a:hover {
+   color: var(--prime); 
+}
+/* NAVIGATION */
+
+/* FIRST CONTENT BLOCK */
+#one {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    padding-top: 150px;
+    padding-bottom: var(--sectpadd);
+}
+#one p {
+    text-align: left;
+    grid-column-start: 2;
+    font-size: 35px;
+    padding-right: 25px;
+}
+#one img {
+    width: 100%;
+    float: right;
+    padding-left: 25px;
+}
+/* FIRST CONTENT BLOCK */
+
+/* SECOND CONTENT BLOCK */
+#two {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    column-gap: 50px;
+    padding-bottom: var(--sectpadd);
+}
+#two img {
+    width: 100%;
+}
+#c1 {
+    grid-column-start: 2;
+}
+#c1 img, #c2 img {
+    height: 200px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+.c {
+    padding: var(--smallpad);
+    background-color: var(--box);
+    border-radius: 25px;
+    text-align: center;
+}
+.doc {
+    background-color: var(--box);
+}
+#two p {
+    background-color: transparent;
+    padding: 25px;
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+.button {
+    background-color: var(--second);
+    padding: 15px;
+    border-radius: 25px;
+    transition: .3s;
+}
+.button:hover {
+    background-color: var(--inside);
+    color: var(--bg);
+}
+/* SECOND CONTENT BLOCK */
+
+/* FOOTER */
+#icons {
+    display: grid;
+    grid-template-columns: 19fr 1fr 1fr 19fr;
+    text-align: center;
+    background-color: transparent;
+}
+#git:hover, #email:hover {
+    scale: 2.5;
+}
+#git {
+    grid-column-start: 2;
+    padding-right: 25px;
+    scale: 2;
+    background-color: transparent;
+    transition: .3s;
+}
+#email {
+    padding-left: 25px;
+    scale: 2;
+    background-color: transparent;
+    transition: .3s;
+}
+footer p {
+    padding: 25px;
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    padding-bottom: var(--smallpad);
+    background-color: transparent;
+}
+/* FOOTER */
+
+

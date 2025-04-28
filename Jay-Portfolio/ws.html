@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jay's Portfolio</title>
+<link href="ws.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="jp.html">Home</a></li>
+            <li><a href="gd.html">Game Design</a>
+            <li><a href="ws.html">Writing Samples</a>
+        </ul>
+    </nav>
+    <h2>Poetry Samples</h2>
+    <section id="one">
+        <div id="first">
+          <img src="Angel.png" alt="">
+        </div>
+        <div id="second">
+            <img src="what am i.png" alt="">
+              </div>
+        </div>
+    </section>
+    <h2>Long Form Fiction</h2>
+    <section id="two">
+        <div id="box">
+        <p>"BORING!"</p><p>
+            This was probably the fifth time Myrna, the young, red-headed woman currently stuck in
+            the back of a dusty wagon headed toward the Capital, had shouted this, and again she was
+            ignored by everyone else... </p>
+          <a class="button" href="Lord Tille.pdf" data-fancybox="gallery">Click for more!</a>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+      <div id="icons">
+          <div id="git">
+              <a href="https://github.com/RushedCore/CTK301" target="_blank" class="bi bi-github"></a>
+          </div>
+          <div id="email">
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCDkkBplNqRKrwSXfDGrTxZhlMMHFZjSdjbXpLbzXBZZCfnlmwqGlzndqWcxKqtZSSWcvq" target="_blank" class="bi bi-envelope-at-fill"></a>
+          </div>
+      </div>
+      <p>Thank you for visiting my site, and feel free to contact me!</p>
+  </footer>
+    <script>   
+        Fancybox.bind("[data-fancybox]", {});
+      </script>
+      <script>
+            function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 30;
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+            window.addEventListener("scroll", reveal, {passive: true});
+      </script>
+</body>
