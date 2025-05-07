@@ -206,7 +206,6 @@ nav a:hover {
     }
     #one {
         padding-top: var(--smallpad);
-        padding-bottom: var(80px);
     }
     #one p {
         text-align: left;
