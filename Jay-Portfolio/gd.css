@@ -388,7 +388,6 @@
     .oops {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1 1;
         background-color: var(--box);
     }
     .fancy {
@@ -546,7 +545,6 @@
     .oops {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1 1;
         background-color: var(--box);
     }
     .fancy {
