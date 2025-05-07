@@ -22,22 +22,59 @@
     <h2>Poetry Samples</h2>
     <section id="one">
         <div id="first">
-          <img src="Angel.png" alt="">
+          <img class="reveal" src="Angel.png" alt="An image of two poems together, alternating blue text on the right and black text on the left. 
+          L - I am enraptured. 
+          R - Bladed wings of fire
+          L - By your beauty
+          R - Too many wings
+          L - And your poise
+          R - So many
+          Line Break
+          L - You are everything
+          R - Brachial, Carotid
+          L - That I covet
+          R - Midline, Maylard
+          L - And pray for
+          R - Eyes bursting
+          Line Break
+          L - Please, oh please, love me
+          R - God it hurts so much
+          L - Or look at me Please,
+          R - won't someone
+          L - Anything
+          R - Just kill me.">
         </div>
         <div id="second">
-            <img src="what am i.png" alt="">
+            <img class="reveal" src="what am i.png" alt="An image of a poem that reads: 
+            Do you remember that game,
+            Line Break
+            There would be a box to unwrap
+            And you's have to open the box
+            With oven mits on your hands
+            Line Break
+            Struggling
+            And insdie would be another box
+            An another and
+            another
+            Line Break
+            In the center
+            Would be some sort of
+            Lame prize
+            something not worth the effort
+            Line Break
+            Yeah, I don't think about it either.">
               </div>
         </div>
     </section>
     <h2>Long Form Fiction</h2>
     <section id="two">
         <div id="box">
-        <p>"BORING!"</p><p>
-            This was probably the fifth time Myrna, the young, red-headed woman currently stuck in
-            the back of a dusty wagon headed toward the Capital, had shouted this, and again she was
-            ignored by everyone else... </p>
-          <a class="button" href="Lord Tille.pdf" data-fancybox="gallery">Click for more!</a>
-          </div>
+            <div class="reveal">
+            <p>"BORING!" <br>
+            This was probably the fifth time Myrna, the young, red-headed woman currently stuck in the back of a dusty wagon headed toward the Capital, had shouted this, and again she was ignored by everyone else... </p>
+            <a class="button" href="Lord Tille.pdf" data-fancybox="gallery">Click for more!</a>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -54,8 +91,8 @@
   </footer>
     <script>   
         Fancybox.bind("[data-fancybox]", {});
-      </script>
-      <script>
+    </script>
+    <script>
             function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
@@ -70,5 +107,21 @@
             }
             }
             window.addEventListener("scroll", reveal, {passive: true});
-      </script>
+    </script>
+    <script>
+                function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 30;
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    } else {
+                    reveals[i].classList.remove("active");
+                    }
+                }
+                }
+                window.addEventListener("scroll", reveal, {passive: true});
+    </script>
 </body>

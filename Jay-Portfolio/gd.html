@@ -24,23 +24,27 @@
         <div class="oops">
           <div class="fancy">
             <a href="Nowhen.pdf" data-fancybox="gallery">
-              <img src="Nowhen.jpg" alt="A low resolution image of the rules for the Four Kingdoms.">
+              <img src="Nowhen.jpg" alt="A low resolution image of the Nowhen document.">
             </a>
           </div>
-          <p class="desc">This is a questline for the 2D RPG “Make Believe” and details an optional quest in the first town players can visit after the tutorial village.
-          </p>
+          <div class="text">
+            <p class="desc">This is a questline for the 2D RPG “Make Believe” and details an optional quest in the first town players can visit after the tutorial village.
+            </p>
+          </div>
           <a class="button" href="Nowhen.pdf" data-fancybox="gallery">Click for more!</a>
         </div>
       </div>
     </section>
     <section id="two">
         <div class="box">
-          <div class="oops">
-            <p class="desc">Here is a brainstormed Overview Document I used to further develop initial ideas for my 2D RPG.
-            </p>
+          <div class="oops reveal">
+            <div class="text">
+              <p class="desc">Here is an Overview Document I used to further develop initial ideas for my 2D RPG. 
+              </p>
+            </div>
             <div class="fancy">
               <a href="TTRPG.pdf" data-fancybox="gallery">
-                <img src="TTRPG.jpg" alt="A low resolution image of the rules for the Four Kingdoms.">
+                <img src="TTRPG.jpg" alt="A low resolution image of TTRPG document.">
               </a>
             </div>
             <a class="button" href="TTRPG.pdf" data-fancybox="gallery">Click for more!</a>
@@ -76,5 +80,21 @@
           }
           }
           window.addEventListener("scroll", reveal, {passive: true});
+    </script>
+    <script>
+            function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 30;
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+            window.addEventListener("scroll", reveal, {passive: true});
     </script>
 </body>
